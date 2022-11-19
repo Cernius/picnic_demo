@@ -20,11 +20,13 @@ class LogInUseCase {
       return failure(const LogInFailure.missingCredentials());
     }
 
+
     if (!isUnitTests) {
       //TODO simulation of network request
       //ignore: no-magic-number
       await Future.delayed(Duration(milliseconds: 500 + Random().nextInt(1000)));
     }
+
 
     if (username == 'test' && password == 'test123') {
       final user = User(
@@ -36,6 +38,7 @@ class LogInUseCase {
         user,
       );
     }
+    print("cia bent kalina?4");
     return failure(const LogInFailure.unknown());
   }
 }

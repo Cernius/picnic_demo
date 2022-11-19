@@ -50,7 +50,7 @@ dev_dependencies:
 
   # tests
   golden_toolkit: 0.13.0
-  alchemist: 0.4.1
+  alchemist: 0.5.1
   mocktail_image_network: 0.3.1
   mocktail: 0.3.0
   bloc_test: 9.0.3
@@ -69,6 +69,8 @@ flutter:
 flutter_gen:
   output: lib/resources/
   line_length: 120
+
+
 
 flutter_intl:
   enabled: true

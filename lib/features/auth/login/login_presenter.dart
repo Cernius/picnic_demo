@@ -35,9 +35,12 @@ class LoginPresenter extends Cubit<LoginViewModel> {
     );
   }
 
-  void login() {
-    logInUseCase
-        .execute(username: _model.username, password: _model.password)
+  Future<void> login({String? username, String? pw}) async {
+    await await logInUseCase
+        .execute(
+          username: username ?? _model.username,
+          password: pw ?? _model.password,
+        )
         .observeStatusChanges(
           (result) => emit(_model.copyWith(loginUCResult: result)),
         )
