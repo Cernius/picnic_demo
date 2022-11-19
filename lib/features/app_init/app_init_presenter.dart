@@ -14,8 +14,7 @@ import 'package:flutter_demo/features/auth/login/login_initial_params.dart';
 import 'package:flutter_demo/features/auth/login/login_page.dart';
 import 'package:flutter_demo/navigation/app_navigator.dart';
 
-class AppInitPresenter extends Cubit<AppInitViewModel>
-    with CubitToCubitCommunicationMixin<AppInitViewModel> {
+class AppInitPresenter extends Cubit<AppInitViewModel> with CubitToCubitCommunicationMixin<AppInitViewModel> {
   AppInitPresenter(
     AppInitPresentationModel super.model,
     this.navigator,

@@ -45,8 +45,7 @@ class LoginPresenter extends Cubit<LoginViewModel> {
           (fail) => navigator.showError(fail.displayableFailure()),
           (success) => navigator.showAlert(
             title: "Congratulations",
-            message:
-                "You managed to log in successfully", // would add these Strings to localizations, but couldn't edit app_localizations file
+            message: "You managed to log in successfully",
           ),
         );
   }
